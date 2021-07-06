@@ -13,7 +13,7 @@ function success() {
                     <div className="flex items-center space-x-2 mb-2">
                         <CheckCircleIcon className="h-10 text-green-500" />
                         <h1 className="text-3xl">
-                            Thank you, your order has been confirmed!
+                            Thank you, your order has been confirmed!!!
                         </h1>
                     </div>
                     <p>
