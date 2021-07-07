@@ -18,23 +18,23 @@ function Checkout() {
 
         alert('okk')
         console.log('okk');
-        // const stripe = await stripePromise;
+        const stripe = await stripePromise;
 
-        // // Call backend to create checkout session
-        // const checkoutSession = await axios.post('/api/create-checkout-session',
-        //     {
-        //         items,
-        //         email: session.user.email
-        //     });
+        // Call backend to create checkout session
+        const checkoutSession = await axios.post('/api/create-checkout-session',
+            {
+                items,
+                email: session.user.email
+            });
 
-        // //Redirect user/customer to stripe checkout
-        // const result = await stripe.redirectToCheckout({
-        //     sessionId: checkoutSession.data.id,
-        // })
+        //Redirect user/customer to stripe checkout
+        const result = await stripe.redirectToCheckout({
+            sessionId: checkoutSession.data.id,
+        })
 
-        // if (result.error) {
-        //     alert(result.error.message);
-        // }
+        if (result.error) {
+            alert(result.error.message);
+        }
     }
 
 
