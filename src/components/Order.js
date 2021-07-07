@@ -15,9 +15,9 @@ function Order({ id, amount, amountShipping, items, timestamp, images }) {
                 <div>
                     <p className="text-xs font-bold">TOTAL</p>
                     <p>
-                        <Currency quantity={amount} currency="GBP" />
+                        <Currency quantity={amount} currency="INR" />
                         - NEXT DAY CONFIRN DELIVERY{" "}
-                        <Currency quantity={amountShipping} currency="GBP" />
+                        <Currency quantity={amountShipping} currency="INR" />
                     </p>
                 </div>
                 <p className="text-xs whitespace-nowrap sm:text-xl self-end flex-1 text-right text-blue-500">

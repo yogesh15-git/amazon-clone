@@ -16,8 +16,8 @@ function Checkout() {
 
     const createCheckoutSession = async () => {
 
-        alert('okk')
-        console.log('okk');
+        // alert('okk')
+        // console.log('okk');
         const stripe = await stripePromise;
 
         // Call backend to create checkout session
@@ -82,7 +82,7 @@ function Checkout() {
                         <>
                             <h1 className="whitespace-nowrap">SubTotal ({items.length} items):{" "}
                                 <span className="font-bold">
-                                    <Currency quantity={totalPrice} currency="GBP" />
+                                    <Currency quantity={totalPrice} currency="INR" />
                                 </span>
                             </h1>
                             <button
